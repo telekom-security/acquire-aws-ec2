@@ -195,7 +195,7 @@ The volume images will be written to the S3 bucket `forensic-foo` under the case
 To use a customer managed KMS key, the script can be called as follows.
 
 ```
-$ sudo python3 acquire_ec2.py --case "CDC-2021-02-26" --instance-list ./ec2_list.txt --s3-bucket forensic-fu --kms-key eebbb888-eeee-4444-baba-085bbbbbbbbb
+$ sudo python3 acquire_ec2.py --case "CASE-NAME-AND-ID" --instance-list ./ec2_list.txt --s3-bucket forensic-fu --kms-key eebbb888-eeee-4444-baba-085bbbbbbbbb
 ```
 
 In this example, the KMS key with the ID `eebbb888-eeee-4444-baba-085bbbbbbbbb` is used for encrypting the temporary volumes created during the acquisition process.
